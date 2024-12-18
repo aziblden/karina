@@ -7,16 +7,17 @@
 
 /* Body */
 body {
-    background: linear-gradient(270deg, #6a11cb, #2575fc);
-    background-image: url('background.jpg');
-    background-size: cover; /* Ensures the image covers the entire page */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background: linear-gradient(270deg, #6a11cb, #2575fc), 
+                url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     color: #ffffff;
-    position: relative; /* To allow positioning of pseudo-element */
+    position: relative;
     animation: animateBackground 15s infinite ease-in-out;
 }
+
 
 body::before {
     content: ""; /* Necessary for pseudo-elements */
